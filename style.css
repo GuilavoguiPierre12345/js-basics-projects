@@ -1,3 +1,85 @@
 body {
-    background-color: aqua;
+    background-color: rgba(0, 255, 255, 0.158);
+    margin: 10% 300px;
+    height: 50vh;
+}
+/* c_box */
+.c_box {
+    border-radius: 10px;
+    width: 900px;
+    height: 535px;
+    background-color: black;
+    color: white;
+    box-shadow: -5px 5px 5px #123456;
+}
+
+/* c_header */
+.c_header h2{
+    font-size: 40px;
+    text-align: center;
+    font-weight:bold;
+    font-style: italic;
+}
+h3{
+    text-align: center;
+    font-size: 28px;
+}
+/* c_content c */
+.c_content {
+    margin-top: 5rem;
+    height: 300px;
+}
+.c_content .c,
+.c_content .c_author {
+    font-size: 28px;
+    margin: 5px;
+    text-align: center;
+}
+
+.c_content .c_author {
+    text-align: right;
+    margin-right: 4rem;
+    margin-top: 2rem;
+}
+
+/* c_footer */
+.c_footer {
+    display: flex;
+    justify-content: space-between;
+}
+.c_footer .n_btn,
+.c_footer .p_btn,
+.c_footer .r_btn {
+    width: 100%;
+}
+.c_footer .n_btn {
+    display:contents;
+}
+.c_footer .n_btn button,
+.c_footer .p_btn button,
+.c_footer .r_btn button{
+    width: 25%;
+    height: 50px;
+    border: none;
+    cursor:pointer;
+    font-size: 28px;
+    font-weight: 700;
+}
+.c_footer .p_btn button {
+    border-radius: 0 0 0 10px;
+}
+.c_footer .n_btn button {
+    border-radius: 0 0 10px;
+}
+.c_footer .r_btn button {
+    width: 30%;
+    border-radius: 0;
+}
+.c_footer .n_btn button:hover,
+.c_footer .p_btn button:hover,
+.c_footer .r_btn button:hover {
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    transition: all .2s ease-in-out;
 }
