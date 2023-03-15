@@ -70,6 +70,7 @@ const citation = [
 ];
 
 // les éléments clés
+const c_box = document.querySelector('.c_box');
 const c = document.getElementById('c');
 const c_a = document.getElementById('c_a');
 
@@ -80,14 +81,16 @@ const p_btn = document.querySelector('.p_btn button');
 const c_number = document.getElementById('c_number');
 
 n_btn.style.display=p_btn.style.display = 'none';
-
-
+const bcolor = ['#123456','coral','green','red','teal','aliceblue','coral','crimson'];
+const color = ['#fff','#fff','#fff','#000','whitesmoke','red','#000','#fff'];
+let i =0;
 r_btn.onclick = () => {
     r_n = Math.floor(Math.random() * citation.length);
     show_cite();
     window.cite_index = () => {
         return r_n;
     }
+    
 }
 
 
@@ -113,11 +116,13 @@ let show_cite = () => {
     let current_c = citation[r_n];
     c.textContent = current_c.c;
     c_a.textContent = current_c.a;
-    
     ((r_n<citation.length) || (r_n >0)) ? n_btn.style.display=p_btn.style.display="block" :'';
-    // if(r_n<citation.length)
-    //     n_btn.style.display="block";
-    // if(r_n >0)
-    //     p_btn.style.display="block";
+    c_b_c();
 }
 
+c_b_c = () => {
+    c_box.style.backgroundColor=bcolor[i];
+    c_box.style.color=color[i];
+    i++;
+    (i >= color.length) ? i=0 : '' ;
+}
