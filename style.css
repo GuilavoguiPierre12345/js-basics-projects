@@ -1,0 +1,67 @@
+/* définition des variables global */
+:root {
+    --c:whitesmoke; 
+    --bc : blue;
+    --fs : 16px;
+    --fw : bold;
+    --ff : 'Cambria';
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+/* le bloc principal d'ajout des tâches */
+.add-task-box {
+    border: 3px groove black;
+    box-shadow: -5px 3px 7px rgba(0, 0, 0, 0.536);
+    margin: 15px;
+    width: 500px;
+}
+/* bloc d'affichage de la date et l'heure */
+.data-box {
+    margin: 10px;
+    padding: 5px;
+    background-color: var(--bc);
+    color: var(--c);
+    font-weight: var(--fw);
+    text-align: center;
+    font-size: var(--fs);
+    font-family: var(--ff);
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.642);
+    border-radius: 10px;
+    height: 150px;
+}
+
+/* le bloc de la tâche */
+.task-box {
+    margin: 15px;
+}
+/* la balise textarea */
+.form-control > textarea {
+    resize: none;
+    width: 100%;
+    border-radius: .7rem;
+    
+}
+.onfocus {
+    border: 2px solid blue;
+}
+/* le bloc de validation */
+.submit-btn {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+/* le bouton de validation  */
+.submit-btn > button {
+    width: 50%;
+    height: 50px;
+    background-color: var(--bc);
+    color: var(--c);
+    border: none;
+    border-radius: 5px;
+    font-size: var(--fs);
+}
+
+/* validate task */

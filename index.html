@@ -9,8 +9,35 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <!-- add task box -->
+   <div class="add-task-box">
+        <div class="data-box">
+            <h2>Date</h2>
+            <h2>Heure</h2>
+        </div>
+        <div class="task-box">
+            <form action="" method="post">
+                <div class="form-control">
+                    <textarea placeholder="Entrez votre tâche ici" name="task" id="task" cols="30" rows="4"></textarea>
+                </div>
+                <div class="submit-btn">
+                    <button type="submit">V</button>
+                </div>
+            </form>
+        </div>
+   </div>
 
+   <!-- validate task -->
+   <div class="validate-task">
+        <div class="task-content" tabindex="0">
+            <div class="remove-task-btn">
+                <button type="button">R</button>
+            </div>
+            <div class="task-text">
+                le contenu de la tâche ajoutée
+            </div>
+        </div>
+   </div>
 
     <!-- js file -->
     <script src="main.js"></script>
