@@ -10,13 +10,19 @@
 body{
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: flex-start;
 }
 /* le bloc principal d'ajout des tâches */
 .add-task-box {
     border: 3px groove black;
     box-shadow: -5px 3px 7px rgba(0, 0, 0, 0.536);
     margin: 15px;
-    width: 500px;
+    width: 22%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 35%;
 }
 /* bloc d'affichage de la date et l'heure */
 .data-box {
@@ -41,7 +47,7 @@ body{
 .form-control > textarea {
     resize: none;
     width: 100%;
-    border-radius: .7rem;
+    border-radius: 5px;
     
 }
 .onfocus {
@@ -62,6 +68,53 @@ body{
     border: none;
     border-radius: 5px;
     font-size: var(--fs);
+    cursor: pointer;
 }
 
 /* validate task */
+.validate-task {
+    /* border: 2px solid black; */
+    margin: 15px;
+    padding: 5px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: calc(100% - 22%);
+    height: min-content;
+}
+
+.task-content {
+    border: 4px solid var(--bc);
+    width: 420px;
+    height: max-content;
+    box-shadow: 3px 3px 10px teal;
+    padding: 5px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    column-gap: 7px;
+    transition: all .3s ease-in-out;
+}
+
+.remove-task-btn {
+    width: 7%;
+}
+.remove-task-btn > button  {
+    height: 30px;
+    width: 100%;
+    background-color: var(--bc);
+    color: var(--c);
+    border: none;
+    border-radius: 5px;
+    font-size: var(--fs);
+    cursor: pointer;
+}
+
+.task-text {
+    width: 90%;
+    font-size: 28px;
+    font-style: italic;
+    text-align: justify;
+    cursor: pointer;
+}
