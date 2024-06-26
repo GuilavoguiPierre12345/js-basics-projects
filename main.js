@@ -110,7 +110,7 @@ var cartBoxContent = `
                 <input type="number" value="1" class="cart-quantity">
             </div>
             <!-- Remove cart    -->
-            <i class="glyphicon glyphicon-trash cart-remove"></i>`;
+            <i class="glyphicon glyphicon-trash cart-remove">Sup</i>`;
 cartShopBox.innerHTML = cartBoxContent //un élément du panier prend le contenu de la variable cartBoxContent
 cartItems.append(cartShopBox); //ajoute 
 cartShopBox.getElementsByClassName('cart-remove')[0].addEventListener('click',removeCartItem) ;

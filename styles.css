@@ -57,25 +57,27 @@ header {
     font-size: 3.1rem;
     color: var(--text-color);
     font-weight: 400;
-    margin-left: -1200px;
+    /* margin-left: -1200px; */
 }
 #icone-panier{
     font-size: 1.8rem;
     cursor: pointer;
-    margin-right: -1200px;
+    /* margin-right: -1200px; */
 }
 /*---   Panier  ----*/
 .cart{
     display: none;
     position: fixed;
     top: 0;
-    /* right: -100%; */
+    /* right: 0; */
     width: 360px;
     min-height: minmax(80vh,auto);
     padding: 20px;
     background:var(--bg-color);
     box-shadow: -2px 0 4px hsl(0%, 4%, 15% /10%);
     transition:all .4s linear;
+    height: 80vh;
+    overflow-y: scroll;
 }
 .active{
     right: 0;
