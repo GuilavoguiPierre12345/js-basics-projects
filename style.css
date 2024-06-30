@@ -25,14 +25,14 @@ body{
     row-gap: 35%;
 }
 /* bloc d'affichage de la date et l'heure */
-.data-box {
+.date-box {
     margin: 10px;
     padding: 5px;
     background-color: var(--bc);
     color: var(--c);
     font-weight: var(--fw);
     text-align: center;
-    font-size: var(--fs);
+    font-size: 24px;
     font-family: var(--ff);
     box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.642);
     border-radius: 10px;
@@ -51,7 +51,11 @@ body{
     
 }
 .onfocus {
-    border: 2px solid blue;
+    border: 1px solid blue;
+}
+.blockResize {
+    resize: none;
+    text-align: left;
 }
 /* le bloc de validation */
 .submit-btn {
@@ -115,6 +119,6 @@ body{
     width: 90%;
     font-size: 28px;
     font-style: italic;
-    text-align: justify;
+    text-align: left;
     cursor: pointer;
 }
