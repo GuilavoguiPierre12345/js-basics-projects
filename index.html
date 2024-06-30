@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Time Chat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body>
+     <div class="wrapper">
+        <section class="form signup">
+            <header>Realtime Chat App</header>
+            <!-- register to chat -->
+            <form action="#">
+                <div class="error-txt">Ceci est un message d'erreur !</div>
+                <div class="name-details">
+                    <div class="field input">
+                        <label for="">prenom</label>
+                        <input type="text" name="prenom" placeholder="votre prenom" id="">
+                    </div>
+                    <div class="field input">
+                        <label for="">nom</label>
+                        <input type="text" name="nom" placeholder="votre nom" id="">
+                    </div>
+                </div>
+                <div class="field input">
+                    <label for="">adresse email</label>
+                    <input type="email" name="email" placeholder="votre email" id="">
+                </div>
+                <div class="field input">
+                    <label for="">password</label>
+                    <input type="password" name="password" placeholder="votre password" id="">
+                    <i class="bi bi-eye-slash"></i>
+                </div>
+                <div class="field image">
+                    <label for="">votre avatar</label>
+                    <input type="file" name="avatar" >
+                </div>
+                <div class="field button">
+                    <input type="submit" value="Continuer a chater">
+                </div>
+            </form>
+
+            <!-- login to chat -->
+            <div class="link">Avez-vous un compte ? <a href="login.html">Login</a></div>
+        </section>
+     </div>   
+
+
+
+
+     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+     <script src="javascript/pass-show-hide.js"></script>
+</body>
+</html>
