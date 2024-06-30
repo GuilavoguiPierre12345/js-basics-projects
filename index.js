@@ -84,6 +84,7 @@ n_btn.style.display=p_btn.style.display = 'none';
 const bcolor = ['#123456','coral','green','red','teal','aliceblue','coral','crimson'];
 const color = ['#fff','#fff','#fff','#000','whitesmoke','red','#000','#fff'];
 let i =0;
+
 r_btn.onclick = () => {
     r_n = Math.floor(Math.random() * citation.length);
     show_cite();
